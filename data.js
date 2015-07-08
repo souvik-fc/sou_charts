@@ -1,5 +1,6 @@
-var col=
-	       {
+var col= new sou_charts({
+	       	
+
 	       	"width":700,
 	       	
 	       	"height":500,
@@ -45,4 +46,4 @@ var col=
 	       	        }
 	       	       ]
 
-	        };
+	        });

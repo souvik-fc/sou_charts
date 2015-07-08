@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>Raphael Play</title>
-        <script type="text/javascript" src="raphael-min.js"></script>
+        
         
         <style type="text/css">
             #canvas_container {
@@ -11,12 +11,12 @@
         </style>
 
 
-<script type="text/javascript" src="colm.js"></script>
-<script type="text/javascript" src="data.js"></script>
+
 
     </head>
     <body>
-       
-
+           <script type="text/javascript" src="raphael-min.js"></script>
+           <script type="text/javascript" src="colm.js"></script>
+           <script type="text/javascript" src="data.js"></script>
     </body>
 </html>

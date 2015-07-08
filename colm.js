@@ -1,5 +1,6 @@
-window.onload = function() {
-
+//
+function sou_charts(col)
+{
 	
 	  //console.log(col.data[0].val);    
 	  var l= col.data.length;
@@ -141,6 +142,6 @@ function rectangle(x,y,w,h)
 
 
 
-
-
 }
+
+//}
