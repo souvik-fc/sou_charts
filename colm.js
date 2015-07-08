@@ -85,17 +85,20 @@ var t=rectangle(200,100,col.width,h).attr({'stroke':'blue',"stroke-width":4});;
 function bar(px , py , l , x , v, value)
 
        {
-          var m=Math.ceil(Math.random()*10);
-
-	   var e = paper.rect ( px , py+0, l, x-0).attr({fill:"#590E15"});//.click(function(){
+          
+var m=1;
+	   var e = paper.rect ( px , py+0, l, x-0).attr({fill:"#590E15"}).data("i",value)
+	   .mouseover(function(){this.attr("title",this.data("i")).attr("fill",'red')})
+	   .mouseout(function(){this.attr("fill",'blue')}).click(function(){
 		 
-		   //this.attr({fill:"#00"+m+"23E"});
-		   
-		   events(e,m);
-		   //m++;
+		   this.attr({fill:"#00"+m+"23E"});
+		 //  var m=Math.ceil(Math.random()*10);
+		   console.log(m);
+		   //events(e,m);
+		   m++;
 		   if(m===9)
 		   	m=1;
-	   //});
+	   });
 	
 	       paper.text( px + l/2 , py + 10 +0, value ).attr({stroke:'yellow'});
 	
